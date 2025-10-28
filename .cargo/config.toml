@@ -1,0 +1,5 @@
+[build]
+rustflags = ["-A", "dangerous-implicit-autorefs"]
+
+[target.wasm32-unknown-unknown]
+rustflags = ["--cfg=wasm_js"]
