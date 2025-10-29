@@ -1,0 +1,23 @@
+These are v1 transaction features for more advanced functionality:
+
+## Lock Merkle Proofs
+Proves you can spend a UTXO by showing a path from your lock (spending condition) to the lock root hash stored in the note. Without this, you can't prove ownership of inputs. **Critical for spending existing notes.**
+
+## Witness Structure
+Segregates signatures from transaction data (like Bitcoin's SegWit). Maps public key hashes to (public key, signature) pairs. **Required for v1 transactions but v0 works without it.**
+
+## Note Data/Metadata
+Arbitrary key-value data attached to outputs - could store NFT metadata, contract state, etc. **Optional - only needed for applications beyond simple value transfer.**
+
+**Importance:**
+- For basic wallet functionality (receiving funds, creating new transactions): Current implementation works
+- For spending existing UTXOs: Need merkle proofs
+- For full v1 compatibility: Need witness structure
+- For advanced features: Need note data
+
+Your current implementation can:
+- Generate valid signatures ✓
+- Create new transactions ✓
+- Cannot yet: Spend existing chain UTXOs (needs proofs)
+
+For a minimal wallet, you'd want to add merkle proofs next. The witness structure and note data can wait unless you specifically need v1 transactions or metadata features.

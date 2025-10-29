@@ -228,3 +228,22 @@ impl ToNoun for PublicKey {
         Noun::list(&[Noun::list(&x), Noun::list(&y), inf])
     }
 }
+
+impl ToNoun for Signature {
+    fn to_noun(&self) -> Noun {
+        /// Converts an 8-word array to an 8-tuple without null terminator.
+        /// Produces [w0 [w1 [w2 [w3 [w4 [w5 [w6 w7]]]]]]]
+        fn words_to_tuple(words: &[u32; 8]) -> Noun {
+            let mut result = Noun::atom_u64(words[7] as u64);
+            for &word in words[..7].iter().rev() {
+                result = Noun::cons(Noun::atom_u64(word as u64), result);
+            }
+            result
+        }
+
+        let challenge_tuple = words_to_tuple(&self.challenge_words32());
+        let response_tuple = words_to_tuple(&self.response_words32());
+        // Signature is a cell [challenge response], not a list
+        Noun::cons(challenge_tuple, response_tuple)
+    }
+}

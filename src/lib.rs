@@ -20,3 +20,6 @@ pub use types::{
     TimeLockIntent,
 };
 pub use v0::{Seed, SimpleNote, Spend, Witness};
+pub use noun::{hash_noun, Noun};
+pub use tip::Tip5Digest;
+pub use zset::ToNoun;
