@@ -5,6 +5,7 @@ edition = "2021"
 description = "High-level transaction helpers for building and signing Nockchain spends in Rust."
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/nockchain/nockchain"
+authors = ["Charles Anderson"]
 
 [lib]
 crate-type = ["rlib"]
@@ -18,7 +19,4 @@ std = ["nockchain-schnorr-rust/std", "nockchain-math-core/std"]
 nockchain-math-core = { path = "../nockchain-math-core", default-features = false }
 nockchain-schnorr-rust = { path = "../nockchain-schnorr-rust", default-features = false }
 ibig = "0.3"
-getrandom = { version = "0.2", features = ["js"], optional = true }
 
-[dev-dependencies]
-nockchain-types = { path = "../nockchain/crates/nockchain-types", default-features = false }
