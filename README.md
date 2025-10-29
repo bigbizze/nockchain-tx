@@ -7,6 +7,13 @@ Tentative equivalence with hoon based nockchain-wallet CLI methods as per tests 
 
 ---
 
+\(See: https://github.com/bigbizze/nockchain-schnorr-rust\)
+\(See: https://github.com/bigbizze/nockchain-math-core\)
+
+
+
+---
+
 ```rs
 use bs58::encode as base58_encode;
 use hex::encode as hex_encode;
