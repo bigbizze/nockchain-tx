@@ -3,7 +3,9 @@
 (WIP) Rust implementation that can target wasm of transaction operations (signing, verification) for the nockchain blockchain. 
 
 
-Tentative equivalence with hoon based nockchain-wallet CLI methods as per tests below (will integrate them later). Notably, signing transactions, signing messages, deriving keys from seeds, deriving child keys, signing hashes etc.
+Tentative equivalence with hoon based nockchain-wallet CLI methods as per tests below (will integrate them later, but all passed). Notably, signing transactions, signing messages, deriving keys from seeds, deriving child keys, signing hashes etc.
+
+See tests below for usage until we get better documentation up
 
 ---
 
