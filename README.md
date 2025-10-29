@@ -1,8 +1,12 @@
 ## nockchain-tx
 
-(WIP) Rust wasm targeting implementation of transaction operations for nockchain. Vovers signing txs and msgs, building txs, deriving keys from eeeds etc.
+(WIP) Rust wasm targeting implementation of transaction operations for nockchain. Covers signing txs and msgs, building txs, deriving keys from eeeds etc.
 
 Tentative equivalence with hoon based nockchain-wallet CLI methods as per tests below (will integrate them later, but all passed). Notably, signing transactions, signing messages, deriving keys from seeds, deriving child keys, signing hashes etc.
+
+---
+
+The hoon / nock virtual machine dependencies of the core implementation of wallets in nockchain prevented any easy way to create browser extension wallets, and complicated creating APIs for languages like Python or Typescript. This should be a step towards resolving those issues 
 
 See tests below for usage until we get better documentation up
 
