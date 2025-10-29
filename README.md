@@ -6,7 +6,7 @@ Tentative equivalence with hoon based nockchain-wallet CLI methods as per tests 
 
 ---
 
-The hoon / nock virtual machine dependencies of the core implementation of wallets in nockchain prevented any easy way to create browser extension wallets, and complicated creating APIs for languages like Python or Typescript. This should be a step towards resolving those issues 
+The hoon / nock virtual machine dependencies of the core implementation of wallets in nockchain prevented any easy way to create browser extension wallets, and complicated creating light APIs that languages like Python or Typescript van hook in to. This should be a step towards resolving those issues 
 
 See tests below for usage until we get better documentation up
 
