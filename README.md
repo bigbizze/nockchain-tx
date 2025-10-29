@@ -7,8 +7,8 @@ Tentative equivalence with hoon based nockchain-wallet CLI methods as per tests 
 
 ---
 
-\(See: https://github.com/bigbizze/nockchain-schnorr-rust\)
-\(See: https://github.com/bigbizze/nockchain-math-core\)
+\(See: https://github.com/bigbizze/nockchain-schnorr-rust)
+\(See: https://github.com/bigbizze/nockchain-math-core)
 
 
 
